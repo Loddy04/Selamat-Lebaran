@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat</title>
+    <link rel="stylesheet" href="../css/selamat.css">
+</head>
+<body>
+    <div class="ucapan">
+        <img id="img3" src="../assets/maap.jpeg" alt="Ucapan Maaf">
+        <h2 style="color: white;">Maaf lahir batin ya <span style="color: rgb(227, 197, 2);" id="hasilNama"></span></h2>
+    </div>
+
+    <script>
+        let nama = localStorage.getItem("nama");
+        document.getElementById("hasilNama").textContent = nama;
+    </script>
+</body>
+</html>
+

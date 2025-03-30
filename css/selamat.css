@@ -1,0 +1,25 @@
+body{
+    background: linear-gradient(to bottom, rgb(0, 0, 71), rgba(0, 0, 0, 0.913));
+}
+
+.ucapan {
+    display: flex;
+    flex-direction: column; /* Agar elemen tersusun ke bawah */
+    justify-content: center; /* Tengahkan secara vertikal */
+    align-items: center; /* Tengahkan secara horizontal */
+    height: 100vh; /* Agar memenuhi seluruh tinggi layar */
+    text-align: center; /* Agar teks tetap di tengah */
+}
+
+#img3 {
+    width: 150px;
+    height: 200px;
+}
+
+.ucapan h2{
+    margin-bottom: 5px;
+}
+
+.ucapan h3{
+    margin-top: 5px;
+}

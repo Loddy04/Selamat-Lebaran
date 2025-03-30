@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siapa Kamu?</title>
+    <link rel="stylesheet" href="../css/siapa.css">
+</head>
+<body>
+    <div class="siapa">
+        <img id="img1" src="../assets/siapa.jpeg" alt="">
+        <h2 style="color: rgb(255, 255, 255);">Elu siapa ?</h2>
+        <div>
+            <form id="namaForm">
+                <input type="text" id="namaInput" placeholder="Panggilan lu" required>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("namaForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Mencegah refresh halaman
+        let nama = document.getElementById("namaInput").value.trim();
+            if (nama) {
+                localStorage.setItem("nama", nama); // Simpan nama di localStorage
+                window.location.href = "elu.html"; // Redirect ke halaman konfirmasi
+            }
+        });
+    </script>
+</body>
+</html>
